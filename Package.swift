@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-argument.git",
+            url: "https://github.com/swift-atoms/swift-argument.git",
             branch: "main"
         ),
         .package(
@@ -38,7 +38,6 @@ let package = Package(
         .testTarget(
             name: "Argument Text Tests",
             dependencies: [
-                "Argument Text",
                 .product(name: "Argument", package: "swift-argument"),
                 .product(name: "Text", package: "swift-text"),
             ],
